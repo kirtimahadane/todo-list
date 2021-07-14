@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+body{
+  position: fixed;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+width: 100%;
+height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+ 
+
+}
+.app{
+width:500px;
+max-width: 500px;
+min-height:600px;
+text-align: center;
+background-color: black;
+color:#fff;
+padding:40px;
+border-radius: 8px;
+}
+.app h1{
+font-size:2rem ;
+font-weight: 500;
+letter-spacing: 2px;
+margin-bottom: 20px;
+}
+input[type="text"]{
+  padding: 10px ;
+  border: 2px solid blueviolet;
+  outline: none;
+  border-radius: 5px;
+  width:70%;
+}
+input[type="checkbox"]{
+  margin-right: 5px;
+}
+button[type="submit"]{
+  padding: 10px ;
+  border: 2px solid blueviolet;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer; 
+}
+button[type="submit"]:disabled{
+  background-color: black;
+  color:#fff;
+}
+.todos{
+  max-width: 100%;
+  position: relative;
+  margin-top: 20px;
+  padding: 8px 0;
+  font-size: 1.2rem ;
+  display: flex;
+  flex-direction:column;
+ 
+}
+.todo{
+width: 80%;
+margin: auto;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom:2px solid blueviolet;
+padding: 5px 0 0;
+ align-items: baseline; 
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.one>*{
+  margin: 3px;
+}
+.modal-inner> *{
+  padding:5px;
+  border-radius: 3px;
+  outline: none;
+  border:none;
+  margin: 3px;
+}
+@media(max-width:500px){
+  
+  .app{
+    width:400px;
+    max-width: 500px;
+    min-height:500px;
+    text-align: center;
+    background-color: black;
+    color:#fff;
+    padding:20px;
+    }
+    .app h1{ 
+font-size: 1.4rem;
+margin-bottom: 10px;
+    }
 }
